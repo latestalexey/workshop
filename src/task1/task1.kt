@@ -4,7 +4,8 @@ import clientApi.Client
 import mailApi.Mailer
 
 /*
-TODO: rewrite function to Java (Util.sendMessageToClient)
+TODO: rewrite this function to Java
+  (write your code in Util.sendMessageToClient)
 */
 fun sendMessageToClient(
         client: Client?, message: String?, mailSender: Mailer

@@ -1,8 +1,9 @@
 package task0
 
 /*
-TODO: rewrite class to Java (task0.java.SimpleClient)
-hint: use menu item "Code -> Generate" to make it faster
+TODO: rewrite this class to Java
+ open task0.java.SimpleClient and write your code there
+ hint: use menu item "Code -> Generate" to make it faster
 */
 data class SimpleClient(
         val email: String,
