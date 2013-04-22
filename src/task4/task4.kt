@@ -1,6 +1,6 @@
 package task4
 
-import clientUtil.getProductOccurrenceMap
+import clientUtil.getProductPopularity
 import kotlinLibrary.*
 
 fun getTitleColor() = "#b9c9fe"

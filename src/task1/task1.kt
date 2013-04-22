@@ -8,12 +8,12 @@ TODO: rewrite this function to Java
   (write your code in Util.sendMessageToClient)
 */
 fun sendMessageToClient(
-        client: Client?, message: String?, mailSender: Mailer
+        client: Client?, message: String?, mailer: Mailer
 ) {
     val email = client?.personalInfo?.email
 
     if (email != null && message != null) {
 
-        mailSender.sendMessage(email, message)
+        mailer.sendMessage(email, message)
     }
 }

@@ -7,12 +7,12 @@ import org.junit.Test as test
 import mailApi.Mailer
 import clientUtil.findTheMostPopularProduct
 import clientUtil.findUnorderedProducts
-import clientUtil.getProductOccurrenceMap
+import clientUtil.getProductPopularity
 import data.*
 
 class testTask3() {
     test fun productOccurrenceMap() {
-        val map = clientData.getProductOccurrenceMap()
+        val map = clientData.getProductPopularity()
         val expectedProductOccurrence = mapOf(cactus to 1, cake to 1, camera to 1, car to 1, carrot to 1, cellPhone to 1,
                 chimney to 1, certificate to 1, cigar to 1, coffee to 3, coffeeMaker to 1,
                 cola to 1, cranberry to 1, crocs to 2, crocodile to 0, cushion to 1)

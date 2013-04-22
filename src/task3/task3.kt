@@ -5,9 +5,9 @@ import java.util.HashMap
 import kotlinLibrary.*
 
 /*
-TODO: count the occurrence of each product (how many times clients have ordered it)
+TODO: count how many times clients have ordered each product
 */
-fun ClientData.getProductOccurrenceMap(): Map<Product, Int> {
+fun ClientData.getProductPopularity(): Map<Product, Int> {
     val map = HashMap<Product, Int>()
     for (product in this.products) {
         // your code goes here
@@ -23,7 +23,7 @@ TODO: find the most popular product (or several), based on how many clients orde
 */
 fun findTheMostPopularProduct(clientBase: ClientData): Collection<Product> {
 
-    val productOccurrence = clientBase.getProductOccurrenceMap()
+    val productPopularity = clientBase.getProductPopularity()
     // your code goes here
     throw UnsupportedOperationException()
 }
@@ -33,7 +33,7 @@ TODO: find products that have never been ordered
 */
 fun findUnorderedProducts(clientBase: ClientData): Collection<Product> {
 
-    val productOccurrence = clientBase.getProductOccurrenceMap()
+    val productPopularity = clientBase.getProductPopularity()
     // your code goes here
     throw UnsupportedOperationException()
 }
