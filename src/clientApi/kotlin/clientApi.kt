@@ -1,5 +1,16 @@
 package clientApi
 
+/*
+Let's imagine we have an online shop with registered clients that can order some products.
+We store the information about clients, products and order history for each client.
+Also we send newsletters about new products to clients who agreed to receive it.
+*/
+
+data class ClientsData(
+        val clients: List<Client>,
+        val products: Set<Product>
+)
+
 data class Client(
         val personalInfo: PersonalInfo?,
         val isInterestedInSpam: Boolean,
@@ -29,8 +40,3 @@ enum class Gender {
 enum class Status {
     SUCCESSFUL REJECTED IN_PROCESS
 }
-
-data class ClientData(
-        val clients: List<Client>,
-        val products: Set<Product>
-)
