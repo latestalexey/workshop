@@ -13,7 +13,7 @@ import clientUtil.sendMessageToWorthyWomen
 
 class testTask2() {
     val sendMessageToInterestedCustomersFunction =
-            { (clientsBase: ClientData, message: String, mailSender: Mailer) ->
+            { (clientsBase: ClientsData, message: String, mailSender: Mailer) ->
                 sendMessageToInterestedCustomers(clientsBase, message, mailSender)}
 
     test fun sendMessageToInterestedCustomer() {
@@ -31,7 +31,7 @@ class testTask2() {
 
     //--------------------------------
     val sendMessageToWorthyWomenFunction =
-            { (clientsBase: ClientData, message: String, mailSender: Mailer) ->
+            { (clientsBase: ClientsData, message: String, mailSender: Mailer) ->
                 sendMessageToWorthyWomen(clientsBase, message, mailSender)}
 
     test fun messageIsSentToWorthyWoman() {

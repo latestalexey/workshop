@@ -1,6 +1,6 @@
 package task4
 
-import clientUtil.getProductPopularity
+import clientUtil.getProductPopularityMap
 import kotlinLibrary.*
 
 fun getTitleColor() = "#b9c9fe"
@@ -10,7 +10,7 @@ fun getCellColor(index: Int, row: Int) = if ((index + row) %2 == 0) "#dce4ff" el
 //TODO(2): color the table in a chess order (using getTitleColor() and getCellColor() functions above)
 // You can run 'task4 Demo' run configuration to see the rendered table
 
-fun renderProductOccurrenceMap(): String {
+fun renderProductPopularityMap(): String {
     return html {
         table {
             tr {
@@ -21,9 +21,10 @@ fun renderProductOccurrenceMap(): String {
                     text("Price")
                 }
                 td {
-                    text("Occurrence")
+                    text("Popularity")
                 }
             }
+            val productPopularity = data.clientData.getProductPopularityMap()
             // your code goes here
         }
     }.toString()

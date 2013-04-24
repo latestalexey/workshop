@@ -12,4 +12,4 @@ and invoke appropriate test configuration, 'testAll' for all tests).
 - In most cases you have to replace the following (comment & exception) with meaningful code:
           // your code goes here
           throw UnsupportedOperationException()
-Note: In Kotlin there is no 'new' operator, so you just invoke constructor without it (as usual function).
+NB: In Kotlin there is no 'new' operator, so you just invoke constructor without it (as usual function).

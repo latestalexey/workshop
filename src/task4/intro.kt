@@ -1,9 +1,7 @@
 package task4.intro
 
 //Default arguments
-fun foo(a: Int = 1, b: Int = 2) {
-
-}
+fun foo(a: Int = 1, b: Int = 2) = a + b
 
 fun testFoo() {
     foo()
@@ -28,7 +26,7 @@ fun testLet() {
 
 
 // Extensions functions
-// like 'fun ClientData.getProductOccurrenceMap()'
+// like 'fun ClientData.getProductPopularityMap()'
 
 fun String.lastChar(): Char {
     return this.charAt(this.size - 1)

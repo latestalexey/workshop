@@ -48,7 +48,7 @@ val fleur = client("Fleur", "fleur@yahoo.com", gender = FEMALE,
 val sophie = client("Sophie", "sophie@laposte.net", gender = FEMALE, isInterestedInSpam = false,
         orders = listOf(Order(coffee, SUCCESSFUL), Order(car, IN_PROCESS), Order(crocs, IN_PROCESS)))
 
-val clientData = ClientData(listOf(bob, ana, x, fleur, sophie),
+val clientData = ClientsData(listOf(bob, ana, x, fleur, sophie),
         setOf(cactus, cake, camera, car, carrot, cellPhone,
                 chimney, certificate, cigar, coffee, coffeeMaker,
                 cola, cranberry, crocs, crocodile, cushion))

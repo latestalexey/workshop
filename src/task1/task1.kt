@@ -5,7 +5,7 @@ import mailApi.Mailer
 
 /*
 TODO: rewrite this function to Java
-  (write your code in Util.sendMessageToClient)
+  (write your code in task1.Util.sendMessageToClient)
 */
 fun sendMessageToClient(
         client: Client?, message: String?, mailer: Mailer

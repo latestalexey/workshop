@@ -5,15 +5,15 @@ import mailApi.Mailer
 import kotlin.test.assertEquals
 
 
-fun createClientData(vararg clients: Client) = ClientData(clients.toList(), setOf())
+fun createClientData(vararg clients: Client) = ClientsData(clients.toList(), setOf())
 
 fun Client.email() = this.personalInfo?.email!!
 
 fun testSendMessageToCustomers(
-        clientsBase: ClientData,
+        clientsBase: ClientsData,
         rightEmails: List<String>,
         assertMessage: String,
-        sendMessageToCustomersFunction: (ClientData, String, Mailer) -> Unit
+        sendMessageToCustomersFunction: (ClientsData, String, Mailer) -> Unit
 ) {
     val emails = hashSetOf<String>()
     sendMessageToCustomersFunction(clientsBase, "Hi!...", object: Mailer {
