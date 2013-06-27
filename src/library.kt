@@ -59,3 +59,6 @@ class IndexForMapIterator<K, V>(val iterator : Iterator<Map.Entry<K, V>>): Itera
     }
 }
 
+fun StringBuilder.plusAssign(c: Char) {
+    append(c)
+}
