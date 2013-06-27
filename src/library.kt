@@ -42,8 +42,6 @@ fun <T> Collection<T>.join(sep : String = "", prep : String = "") : String {
 }
 
 
-fun <T, R> with(obj: T, task: T.() -> R): R = obj.task()
-
 public inline fun <K, V> Map<K, V>.withIndices() : Iterator<Triple<Int, K, V>> {
     return IndexForMapIterator(iterator())
 }
