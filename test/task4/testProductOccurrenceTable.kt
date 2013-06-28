@@ -4,16 +4,16 @@ import kotlin.test.*
 import org.junit.Test as test
 
 class testTask4 {
-    test fun productOccurrenceTableIsFilled() {
+    test fun productPopularityTableIsFilled() {
         data.clientData.products
         val result = renderProductPopularityMap()
-        assertTrue(result.contains("cactus"), "product occurrence map should contain table of products and their occurrence")
+        assertTrue(result.contains("cactus"), "product popularity table should contain corresponding data")
     }
 
-    test fun productOccurrenceTableIsColored() {
+    test fun productPopularityTableIsColored() {
         data.clientData.products
         val result = renderProductPopularityMap()
-        assertTrue(result.contains("bgcolor"), "product occurrence map should be colored")
+        assertTrue(result.contains("bgcolor"), "product popularity table should be colored")
     }
 }
 

@@ -11,7 +11,7 @@ import task4.renderProductPopularityMap
 
 
 fun main(args: Array<String>) {
-    with (JFrame("Product occurrence")) {
+    with (JFrame("Product popularity")) {
         setSize(600, 600)
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
         add(JScrollPane(JLabel(renderProductPopularityMap(), CENTER)))
